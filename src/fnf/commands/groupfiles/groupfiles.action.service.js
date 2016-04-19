@@ -62,9 +62,9 @@
                 {value: 'first_letter', label: 'First letter'},
                 {value: 'first_letter_lower', label: 'First letter lowercase'},
                 {value: 'first_letter_upper', label: 'First letter uppercase'},
-                {value: 'two_letters', label: 'Tow letters'},
-                {value: 'two_letters_lower', label: 'Tow letters lowercase'},
-                {value: 'two_letters_upper', label: 'Tow letters uppercase'}
+                {value: 'two_letters', label: 'Two letters'},
+                {value: 'two_letters_lower', label: 'Two letters lowercase'},
+                {value: 'two_letters_upper', label: 'Two letters uppercase'}
             ]
         };
 
