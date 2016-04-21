@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="lib/bootstrap-4.0.0.a2.min.css">
     <link rel="stylesheet" href="lib/ag-grid-2.3.5.min.css">
     <link rel="stylesheet" href="lib/polymer-layout.css">
+    <link rel="stylesheet" href="lib/farbtastic.css">
     <link rel="stylesheet" href="fnf/app.css">
     <link rel="stylesheet" href="fnf/app.color.css">
     <!-- endbuild -->
@@ -31,6 +32,7 @@
     <script src="lib/ag-grid-2.3.5.min.js"></script>
     <script src="lib/async-1.5.2.min.js"></script>
     <script src="lib/ui-bootstrap-tpls-1.2.4.min.js"></script>
+    <script src="lib/farbtastic.js"></script>
     <!-- endbuild -->
 
     <!-- build:js1 js/main.js -->
@@ -53,6 +55,7 @@
     <script src="fnf/gui/click/rightclick.directive.js"></script>
     <script src="fnf/gui/click/longclick.directive.js"></script>
     <script src="fnf/gui/click/longpress.directive.js"></script>
+    <script src="fnf/gui/color/color.popover.directive.js"></script>
 
     <script src="fnf/drop/drag.enter.directive.js"></script>
     <script src="fnf/drop/drag.over.directive.js"></script>
@@ -206,8 +209,14 @@
                     <li class="nav-item">
                         <folderbtn starting-points="main.data.folderLatestAdded"
                                    label="main.getFolderLabel(1)"
-                                   on-folder-changed="main.setFolder(1, folder)"></folderbtn>
+                                   on-folder-changed="main.setFolder(1, folder)"
+                                   data-placement="bottom"
+                                   id="fnf-folder-btn-right"></folderbtn>
+                        <color-popover visible="main.colorPopoverVisible"
+                                       target="'#fnf-folder-btn-right'"
+                                       values="['--footer-primary-background-color', '--footer-primary-color']"></color-popover>
                     </li>
+
                     <li ng-repeat="tab in main.data.tabs[1]" class="nav-item">
                         <a class="nav-link pull-left" href="#"
                            ng-class="{'active': tab.active, 'font-weight-bold':(tab.active && main.data.activePanelIndex===1), 'blinking':tab.running}"

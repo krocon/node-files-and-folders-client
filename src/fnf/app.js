@@ -27,6 +27,7 @@
             'rightClickDirective',
             'longClickDirective',
             'longPressDirective',
+            'colorPopoverDirective',
 
             'templates',
             'socket',
@@ -139,19 +140,10 @@
 
             }
         ]);
-
-        //var _t=true;
-        //var test = function test() {
-        //    _t = !_t;
-        //    if (_t) {
-        //        document.documentElement.style.setProperty('--cursor-row-background-color', 'green');
-        //    } else {
-        //        document.documentElement.style.setProperty('--cursor-row-background-color', 'red');
-        //    }
-        //    window.setTimeout(test, 3333);
-        //};
-        //test();
-
-
 })();
 
+$(function(){
+    // Tooltips and Popovers are opt-in for performance reasons, so we must initialize them ourself:
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+});

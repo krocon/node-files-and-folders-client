@@ -7,15 +7,19 @@
 
     AppController.$inject = ['mainService', 'folderService', 'initService', 'gridService', 'dataService', 'actionQueueService',
         'shortcutService', 'constantsService', 'selectionService', 'folderActionService',
-        'tabService', 'actionService', 'notifyService', 'historyService', 'configService', 'colorService', '$log'];
+        'tabService', 'actionService', 'notifyService', 'historyService', 'configService', 'colorService', '$log', '$timeout'];
 
     function AppController(mainService, folderService, initService, gridService, dataService, actionQueueService,
                            shortcutService, constantsService, selectionService, folderActionService,
-                           tabService, actionService, notifyService, historyService, configService, colorService, $log) {
+                           tabService, actionService, notifyService, historyService, configService, colorService, $log, $timeout) {
 
         $log.info('AppController...');
 
         var vm = this;
+        vm.colorPopoverVisible = false;
+        // $timeout(function () {
+        //     vm.colorPopoverVisible = true;
+        // }, 3333);
 
         vm.getShortcutByActionId = shortcutService.getShortcutByActionId;
         vm.printShortcutByActionId = shortcutService.printShortcutByActionId;

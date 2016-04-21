@@ -67,6 +67,13 @@ body.fnf .fnf-footer .fnf-filecount-row {height:30px;padding-top:3px;}
 .modal-body.fullbleed h4 {padding-top: 5px;}
 
 /* ---------------------------------------------------------------------------- */
+.popover.colorpopover {background-color: rgba(255,255,255,0.9);}
+.popover.colorpopover .popover-content {padding:5px;}
+
+
+
+
+/* ---------------------------------------------------------------------------- */
 
 ::-webkit-scrollbar {-webkit-appearance: none;}
 ::-webkit-scrollbar-button {display: none;}
