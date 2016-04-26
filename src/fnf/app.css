@@ -60,6 +60,10 @@ body.fnf .fullheight .modal-content {height: 100%;background:rgba(255,255,255,0.
 
 #fnf-gotoanything-dialog .modal-dialog {margin-left: 30%;}
 #fnf-gotoanything-dialog .modal-content, #fnf-gotoanything-dialog .modal-body {height:50px;}
+
+#fnf-colorconfig-action-dialog .modal-dialog {width:300px;}
+#fnf-colorconfig-action-dialog .modal-dialog label {margin-bottom:0;}
+
 /*background: rgba(255,255,255,0.5) }*/
 
 body.fnf .fnf-footer .fnf-filecount-row {height:30px;padding-top:3px;}

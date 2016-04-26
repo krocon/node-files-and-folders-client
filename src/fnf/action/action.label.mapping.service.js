@@ -52,6 +52,8 @@
         mapping[constantsService.NAVIGATE_LEVEL_DOWN] = 'Parent Dir';
         mapping[constantsService.NAVIGATE_BACK] = 'History Back';
         //mapping[constantsService.ENTER_PRESSED] = 'Run or navigate';
+        mapping[constantsService.OPEN_COLORCONFIG_DLG] = 'Color Config...';
+
 
 
         var getLabelForAction = function getLabelForAction(id) {

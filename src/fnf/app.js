@@ -105,7 +105,10 @@
             'clipboardService',
 
             'gridiconService',
-            'mainService'
+            'mainService',
+
+            'colorconfigService',
+            'ColorconfigController'
         ])
         .config([
             '$provide',

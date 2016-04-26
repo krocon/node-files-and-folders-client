@@ -31,7 +31,8 @@
         actionDialogMap[ret.OPEN_GROUPFILES_DLG] = {id: 'fnf-groupfiles-dialog', url: '/fnf/commands/groupfiles/dialog.html', nocache: true};
         actionDialogMap[ret.OPEN_SELECT_DLG] = {id: 'fnf-selection-dialog', url: '/fnf/commands/select/selectdialog.html'};
         actionDialogMap[ret.OPEN_DESELECT_DLG] = {id: 'fnf-deselection-dialog', url: '/fnf/commands/select/deselectdialog.html'};
-
+        actionDialogMap[ret.OPEN_COLORCONFIG_DLG] = {id: 'fnf-colorconfig-dialog', url: '/fnf/config/color/dialog.html', nocache: true};
+        
         var getDialogMetaData = function getDialogMetaData(actionId) {
             return actionDialogMap[actionId];
         };
