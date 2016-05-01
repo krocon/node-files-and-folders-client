@@ -320,7 +320,7 @@
 
                     <div class="btn-group dropup" role="group">
                         <button id="btnGroupDropCommands" type="button" class="btn btn-secondary dropdown-toggle"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More&nbsp;</button>
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action&nbsp;</button>
                         <div ng-if="main.data.configLoaded" class="dropdown-menu" aria-labelledby="btnGroupDropCommands" style="min-width: 20em;">
                             <menuitem mid="main.OPEN_FIND_DLG" on-item-clicked="main.action(mid)"></menuitem>
                             <menuitem mid="main.OPEN_CHDIR_DLG" on-item-clicked="main.action(mid)"></menuitem>
@@ -338,9 +338,6 @@
                             <menuitem mid="main.COPY_2_CLIPBOARD_FULLNAMES" on-item-clicked="main.action(mid)"></menuitem>
                             <menuitem mid="main.COPY_2_CLIPBOARD_FULLNAMES_AS_JSON" on-item-clicked="main.action(mid)"></menuitem>
 
-                            <div class="dropdown-divider"></div>
-                            <menuitem mid="main.OPEN_COLORCONFIG_DLG" on-item-clicked="main.action(mid)"></menuitem>
-                            <menuitem mid="main.SAVE_CONFIG" on-item-clicked="main.action(mid)"></menuitem>
                             <div class="dropdown-divider"></div>
                             <menuitem mid="main.OPEN_GOTO_ANYTHING_DLG" on-item-clicked="main.action(mid)"></menuitem>
                         </div>
@@ -385,11 +382,15 @@
                     <div class="btn-group dropup dropleft" role="group">
                         <button id="btnGroupDropCommandsForStyles" type="button" class="btn btn-secondary dropdown-toggle"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-paint-brush"></i></button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDropCommandsForStyles" style="min-width: 10em;">
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDropCommandsForStyles" style="min-width: 20em;">
                             <a class="dropdown-item text-nowrap" href="#"
                                ng-repeat="style in main.data.availableStyles"
                                ng-click="main.setStyle(style)"
                                ng-bind-html="style"></a>
+
+                            <div class="dropdown-divider"></div>
+                            <menuitem mid="main.OPEN_COLORCONFIG_DLG" on-item-clicked="main.action(mid)"></menuitem>
+                            <menuitem mid="main.SAVE_CONFIG" on-item-clicked="main.action(mid)"></menuitem>
                         </div>
                     </div>
                 </div>
